@@ -18,5 +18,11 @@ class UserSeeder extends Seeder
             'email' => 'adimn@example.com',
             'password' => hash('sha256', '123456'),
         ]);
+
+        User::create([
+            'name' => 'Albert',
+            'email' => 'albert@sigma.com',
+            'password' => hash('sha256', 'p@ssw0rd'),
+        ]);
     }
 }
