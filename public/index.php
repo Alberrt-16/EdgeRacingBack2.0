@@ -19,4 +19,6 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 /** @var Application $app */
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
+dd('hola');
+
 $app->handleRequest(Request::capture());
