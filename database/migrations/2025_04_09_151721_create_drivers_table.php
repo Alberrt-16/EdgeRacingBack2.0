@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('drivers', function (Blueprint $table) {
             $table->id();
+            $table->string('first_name');
+            $table->string('last_name');
+            $table->date('birth_date');
+            $table->string('birth_country');
+            $table->integer('car_number')->nullable();
+            $table->string('profile_image')->nullable();
+            $table->boolean('active')->default(true);
+            $table->unsignedBigInteger('team_id');
+            $table->foreign('team_id')->references('id')->on('teams')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('tracks', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('country');
+            $table->string('location')->nullable();
+            $table->float('length')->nullable();
+            $table->integer('turns')->nullable();
+            $table->string('image')->nullable();
+            $table->text('description')->nullable(); 
             $table->timestamps();
         });
     }

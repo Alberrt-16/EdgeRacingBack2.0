@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('races', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->date('date');
+            $table->time('start_time')->nullable();
+            $table->integer('laps')->nullable();
+            $table->text('description')->nullable();
+            $table->foreignId('competition_id')->constrained()->onDelete('cascade');
+            $table->foreignId('track_id')->constrained()->onDelete('cascade'); 
             $table->timestamps();
         });
     }

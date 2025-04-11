@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('teams', function (Blueprint $table) {
+        Schema::create('competitions', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('country');
-            $table->string('principal');
-            $table->string('logo')->nullable();
-            $table->text('description')->nullable();
+            $table->string('description');
+            $table->string(column: 'image');
+            $table->enum('status', ['upcoming', 'ongoing', 'finished'])->default('upcoming');
             $table->timestamps();
         });
     }
@@ -27,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('teams');
+        Schema::dropIfExists('competitions');
     }
 };

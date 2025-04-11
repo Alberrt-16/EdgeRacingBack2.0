@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+class Track extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'country',
+        'location',
+        'length',
+        'turns',
+        'image',
+        'description',
+    ];
+
+    public function races()
+    {
+        return $this->hasMany(Race::class);
+    }
+}

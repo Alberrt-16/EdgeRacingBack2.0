@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('rankings', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('race_id')->constrained()->onDelete('cascade');
+            $table->foreignId('driver_id')->constrained()->onDelete('cascade'); 
+            $table->integer('position')->nullable();
+            $table->float('points')->default(0);
+            $table->time('fastLap')->nullable();
+            $table->boolean('did_not_finish')->default(false);
+            $table->text('notes')->nullable();
             $table->timestamps();
         });
     }
