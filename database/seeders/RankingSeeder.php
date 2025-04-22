@@ -17,7 +17,7 @@ class RankingSeeder extends Seeder
 
         foreach ($races as $race) {
             // Seleccionamos aleatoriamente entre 10 y 15 pilotos para cada carrera
-            $participants = $drivers->random(rand(10, 15))->values();
+            $participants = $drivers->random(rand(1, 50))->values();
 
             foreach ($participants as $position => $driver) {
                 $didNotFinish = fake()->boolean(10); // 10% de posibilidades de abandonar
