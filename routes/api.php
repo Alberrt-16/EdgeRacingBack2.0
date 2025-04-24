@@ -10,6 +10,7 @@ use App\Http\Controllers\TrackController;
 use App\Http\Controllers\DriverController;
 use App\Http\Controllers\RankingController;
 use App\Http\Controllers\CompetitionController;
+use App\Http\Controllers\GlobalRankingController;
 
 Route::get('/users' , function () {
     return UserResource::collection(User::all());
@@ -51,6 +52,8 @@ Route::get('/ranking/list', [RankingController::class, 'index'])->name('ranking_
 Route::match(['get', 'post'], '/ranking/new', [RankingController::class, 'store'])->name('ranking_new');
 Route::match(['get', 'post'], '/ranking/edit/{id}', [RankingController::class, 'update'])->name('ranking_edit');
 Route::get('/ranking/delete/{id}', [RankingController::class, 'delete'])->name('ranking_delete');
+Route::get('/ranking/global/drivers', [GlobalRankingController::class, 'drivers']);
+Route::get('/ranking/global/teams', [GlobalRankingController::class, 'teams']);
 
 Route::get('/saludo', function () {
     return response()->json(['mensaje' => 'Hola desde Laravel']);

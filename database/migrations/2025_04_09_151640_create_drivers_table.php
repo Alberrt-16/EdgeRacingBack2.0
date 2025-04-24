@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('last_name');
             $table->date('birth_date');
             $table->string('birth_country');
-            $table->integer('car_number')->nullable();
+            $table->integer('vehicle_number')->nullable();
             $table->string('profile_image')->nullable();
             $table->boolean('active')->default(true);
             $table->unsignedBigInteger('team_id');

@@ -13,7 +13,6 @@ class TrackSeeder extends Seeder
     {
             $tracks = [
                 [
-                    'id' => 1,
                     'name' => 'Albert Park Circuit',
                     'country' => 'Australia',
                     'location' => 'Melbourne',
@@ -22,7 +21,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/2/27/Melbourne_GP_Circuit.png',
                 ],
                 [
-                    'id' => 2,
                     'name' => 'Shanghai International Circuit',
                     'country' => 'China',
                     'location' => 'Shanghai',
@@ -31,7 +29,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Shanghai_International_Racing_Circuit_track_map.svg',
                 ],
                 [
-                    'id' => 3,
                     'name' => 'Bahrain International Circuit',
                     'country' => 'Bahrain',
                     'location' => 'Sakhir',
@@ -40,7 +37,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/5/5b/Bahrain_International_Circuit--Grand_Prix_Layout.svg',
                 ],
                 [
-                    'id' => 4,
                     'name' => 'Jeddah Street Circuit',
                     'country' => 'Saudi Arabia',
                     'location' => 'Jeddah',
@@ -49,7 +45,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/b/be/Jeddah_Street_Circuit_2021.svg',
                 ],
                 [
-                    'id' => 5,
                     'name' => 'Miami International Autodrome',
                     'country' => 'United States',
                     'location' => 'Miami',
@@ -58,7 +53,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/2/24/Miami_Grand_Prix_layout_2022.svg',
                 ],
                 [
-                    'id' => 6,
                     'name' => 'Imola Circuit',
                     'country' => 'Italy',
                     'location' => 'Imola',
@@ -67,7 +61,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/4/47/Circuit_Imola_2009.svg',
                 ],
                 [
-                    'id' => 7,
                     'name' => 'Circuit de Monaco',
                     'country' => 'Monaco',
                     'location' => 'Monte Carlo',
@@ -76,7 +69,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/e/e3/Monte_Carlo_Formula_1_track_map.svg',
                 ],
                 [
-                    'id' => 8,
                     'name' => 'Circuit de Barcelona-Catalunya',
                     'country' => 'Spain',
                     'location' => 'Montmeló',
@@ -85,7 +77,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/b/bb/Circuit_de_Barcelona_Catalunya.svg',
                 ],
                 [
-                    'id' => 9,
                     'name' => 'Circuit Gilles Villeneuve',
                     'country' => 'Canada',
                     'location' => 'Montreal',
@@ -94,7 +85,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/1/11/Circuit_Gilles_Villeneuve.svg',
                 ],
                 [
-                    'id' => 10,
                     'name' => 'Red Bull Ring',
                     'country' => 'Austria',
                     'location' => 'Spielberg',
@@ -103,7 +93,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/8/88/Red_Bull_Ring.svg',
                 ],
                 [
-                    'id' => 11,
                     'name' => 'Silverstone Circuit',
                     'country' => 'United Kingdom',
                     'location' => 'Silverstone',
@@ -112,7 +101,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/2/2c/Silverstone_circuit_2020.svg',
                 ],
                 [
-                    'id' => 12,
                     'name' => 'Circuit de Spa-Francorchamps',
                     'country' => 'Belgium',
                     'location' => 'Stavelot',
@@ -121,7 +109,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/f/f2/Circuit_Spa.png',
                 ],
                 [
-                    'id' => 13,
                     'name' => 'Hungaroring',
                     'country' => 'Hungary',
                     'location' => 'Budapest',
@@ -130,7 +117,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/6/65/Hungaroring.svg',
                 ],
                 [
-                    'id' => 14,
                     'name' => 'Circuit Zandvoort',
                     'country' => 'Netherlands',
                     'location' => 'Zandvoort',
@@ -139,7 +125,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/5/5a/Circuit_Zandvoort_2020.svg',
                 ],
                 [
-                    'id' => 15,
                     'name' => 'Monza Circuit',
                     'country' => 'Italy',
                     'location' => 'Monza',
@@ -148,7 +133,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/0/0d/Circuit_Monza.svg',
                 ],
                 [
-                    'id' => 16,
                     'name' => 'Baku City Circuit',
                     'country' => 'Azerbaijan',
                     'location' => 'Baku',
@@ -157,7 +141,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Baku_city_circuit_track_map.svg',
                 ],
                 [
-                    'id' => 17,
                     'name' => 'Marina Bay Street Circuit',
                     'country' => 'Singapore',
                     'location' => 'Singapore',
@@ -166,7 +149,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/1/12/Marina_Bay_Street_Circuit_2023.svg',
                 ],
                 [
-                    'id' => 18,
                     'name' => 'Suzuka Circuit',
                     'country' => 'Japan',
                     'location' => 'Suzuka',
@@ -175,7 +157,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/9/96/Circuit_Suzuka.png',
                 ],
                 [
-                    'id' => 19,
                     'name' => 'Circuit of the Americas',
                     'country' => 'United States',
                     'location' => 'Austin, Texas',
@@ -184,7 +165,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/f/fc/Circuit_of_the_Americas.svg',
                 ],
                 [
-                    'id' => 20,
                     'name' => 'Autódromo Hermanos Rodríguez',
                     'country' => 'Mexico',
                     'location' => 'Mexico City',
@@ -193,7 +173,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Autodromo_Hermanos_Rodriguez_2022.svg',
                 ],
                 [
-                    'id' => 21,
                     'name' => 'Interlagos (Autódromo José Carlos Pace)',
                     'country' => 'Brazil',
                     'location' => 'São Paulo',
@@ -202,7 +181,6 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/f/f5/Interlagos.svg',
                 ],
                 [
-                    'id' => 22,
                     'name' => 'Las Vegas Street Circuit',
                     'country' => 'United States',
                     'location' => 'Las Vegas',
@@ -211,13 +189,121 @@ class TrackSeeder extends Seeder
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/d/d6/Las_Vegas_Grand_Prix_track_map.svg',
                 ],
                 [
-                    'id' => 23,
                     'name' => 'Yas Marina Circuit',
                     'country' => 'United Arab Emirates',
                     'location' => 'Abu Dhabi',
                     'length' => 5.281,
                     'turns' => 16,
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/f/f8/Yas_Marina_Circuit_2021.svg',
+                ],
+                [
+                    'name' => 'Chang International Circuit',
+                    'country' => 'Thailand',
+                    'location' => 'Buriram',
+                    'length' => 4.554,
+                    'turns' => 12,
+                    'image' => 'https://upload.wikimedia.org/wikipedia/commons/3/3f/Chang_International_Circuit_map.svg',
+                ],
+                [
+                    'name' => 'Autódromo Termas de Río Hondo',
+                    'country' => 'Argentina',
+                    'location' => 'Termas de Río Hondo',
+                    'length' => 4.806,
+                    'turns' => 14,
+                    'image' => 'https://upload.wikimedia.org/wikipedia/commons/8/84/Termas_de_R%C3%ADo_Hondo.svg',
+                ],
+                [
+                    'name' => 'Lusail International Circuit',
+                    'country' => 'Qatar',
+                    'location' => 'Lusail',
+                    'length' => 5.380,
+                    'turns' => 16,
+                    'image' => 'https://upload.wikimedia.org/wikipedia/commons/3/3f/Losail_International_Circuit.svg',
+                ],
+                [
+                    'name' => 'Circuito de Jerez - Ángel Nieto',
+                    'country' => 'Spain',
+                    'location' => 'Jerez de la Frontera',
+                    'length' => 4.428,
+                    'turns' => 13,
+                    'image' => 'https://upload.wikimedia.org/wikipedia/commons/3/3c/Circuito_de_Jerez.svg',
+                ],
+                [
+                    'name' => 'Bugatti Circuit',
+                    'country' => 'France',
+                    'location' => 'Le Mans',
+                    'length' => 4.185,
+                    'turns' => 14,
+                    'image' => 'https://upload.wikimedia.org/wikipedia/commons/5/5d/Bugatti_Circuit.svg',
+                ],
+                [
+                    'name' => 'MotorLand Aragón',
+                    'country' => 'Spain',
+                    'location' => 'Alcañiz',
+                    'length' => 5.077,
+                    'turns' => 17,
+                    'image' => 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Motorland_Aragon.svg',
+                ],
+                [
+                    'name' => 'Autodromo Internazionale del Mugello',
+                    'country' => 'Italy',
+                    'location' => 'Scarperia e San Piero',
+                    'length' => 5.245,
+                    'turns' => 15,
+                    'image' => 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Mugello_Circuit.svg',
+                ],
+                [
+                    'name' => 'TT Circuit Assen',
+                    'country' => 'Netherlands',
+                    'location' => 'Assen',
+                    'length' => 4.542,
+                    'turns' => 18,
+                    'image' => 'https://upload.wikimedia.org/wikipedia/commons/1/1f/TT_Circuit_Assen.svg',
+                ],
+                [
+                    'name' => 'Algarve International Circuit',
+                    'country' => 'Portugal',
+                    'location' => 'Portimão',
+                    'length' => 4592,
+                    'turns' => 15,
+                    'image' => 'portimao.jpg',
+                    'description' => 'Conocido por sus subidas, bajadas y espectaculares curvas ciegas.',
+                ],
+                [
+                    'name' => 'Sachsenring',
+                    'country' => 'Germany',
+                    'location' => 'Hohenstein-Ernstthal',
+                    'length' => 3671,
+                    'turns' => 13,
+                    'image' => 'sachsenring.jpg',
+                    'description' => 'Famoso por sus curvas enlazadas de izquierdas y el ambiente alemán.',
+                ],
+                [
+                    'name' => 'Misano World Circuit Marco Simoncelli',
+                    'country' => 'Italy',
+                    'location' => 'Misano Adriatico',
+                    'length' => 4226,
+                    'turns' => 16,
+                    'image' => 'misano.jpg',
+                    'description' => 'Velocidad y técnica en el corazón de la Riviera italiana.',
+                ],
+                [
+                    'name' => 'Sepang International Circuit',
+                    'country' => 'Malaysia',
+                    'location' => 'Sepang',
+                    'length' => 5543,
+                    'turns' => 15,
+                    'image' => 'sepang.jpg',
+                    'description' => 'Circuito caluroso y técnico muy popular entre los pilotos.',
+                ],
+                [
+                    'name' => 'Circuit Ricardo Tormo',
+                    'country' => 'Spain',
+                    'location' => 'Valencia',
+                    'length' => 4005,
+                    'turns' => 14,
+                    'image' => 'valencia.jpg',
+                    'description' => 'Final clásico de temporada en una pista compacta y técnica.',
                 ],
         ];
 

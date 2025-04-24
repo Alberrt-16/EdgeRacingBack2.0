@@ -12,6 +12,7 @@ class CompetitionSeeder extends Seeder
     {
         $competitions = [
             [
+                
                 'name' => 'Formula 1',
                 'description' => 'Campeonato mundial de monoplazas organizado por la FIA.',
                 'image' => 'https://upload.wikimedia.org/wikipedia/en/thumb/3/33/F1.svg/1200px-F1.svg.png',

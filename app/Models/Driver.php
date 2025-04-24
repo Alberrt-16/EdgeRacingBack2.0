@@ -12,7 +12,7 @@ class Driver extends Model
         'last_name',
         'birth_date',
         'birth_country',
-        'car_number',
+        'vehicle_number',
         'profile_image',
         'active',
         'team_id',
