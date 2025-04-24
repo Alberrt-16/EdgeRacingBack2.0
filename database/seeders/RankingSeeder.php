@@ -12,19 +12,19 @@ class RankingSeeder extends Seeder
 {
     public function run(): void
     {
-        $races = Race::all();
+        $races = Race::with('competition')->get(); // Aseguramos que traiga también la competición
         $drivers = Driver::all();
 
         foreach ($races as $race) {
-            // Seleccionamos aleatoriamente entre 10 y 15 pilotos para cada carrera
-            $participants = $drivers->random(rand(1, max: $drivers->count()))->values();
+            $participants = $drivers->random(rand(10, 15))->values(); // Participan entre 10 y 15 pilotos
 
             foreach ($participants as $position => $driver) {
-                $didNotFinish = fake()->boolean(10); // 10% de posibilidades de abandonar
-                $isFastLap = fake()->boolean(5);     // 5% de ser la vuelta rápida
+                $didNotFinish = fake()->boolean(10); // 10% chance de DNF
+                $isFastLap = fake()->boolean(5);     // 5% chance vuelta rápida
 
                 Ranking::create([
                     'race_id' => $race->id,
+                    'competition_id' => $race->competition_id, // Aquí se incluye la competición
                     'driver_id' => $driver->id,
                     'position' => $didNotFinish ? null : $position + 1,
                     'points' => $didNotFinish ? 0 : max(0, 25 - ($position * 2)),
