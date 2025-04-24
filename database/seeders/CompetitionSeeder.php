@@ -15,13 +15,13 @@ class CompetitionSeeder extends Seeder
                 
                 'name' => 'Formula 1',
                 'description' => 'Campeonato mundial de monoplazas organizado por la FIA.',
-                'image' => 'https://upload.wikimedia.org/wikipedia/en/thumb/3/33/F1.svg/1200px-F1.svg.png',
+                'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/1024px-F1.svg.png',
                 'status' => 'ongoing',
             ],
             [
                 'name' => 'MotoGP',
                 'description' => 'Campeonato mundial de motociclismo organizado por la FIM.',
-                'image' => 'https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/MotoGP_logo.svg/1200px-MotoGP_logo.svg.png',
+                'image' => 'https://images.seeklogo.com/logo-png/22/2/motogp-logo-png_seeklogo-228834.png',
                 'status' => 'ongoing',
             ],
         ];
