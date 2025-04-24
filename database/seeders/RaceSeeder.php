@@ -369,7 +369,7 @@ class RaceSeeder extends Seeder
                 'track_id' => 35,
             ],
             [
-                'name' => 'Valencia Grand Prix',
+                'name' => 'Valencia Grand Prix ',
                 'date' => '2025-11-16',
                 'start_time' => '14:00:00',
                 'laps' => 27,
