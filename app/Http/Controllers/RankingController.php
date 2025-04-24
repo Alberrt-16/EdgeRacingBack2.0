@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class RankingController extends Controller
 {
     public function index() {
-        return Ranking::groupBy('race_id');
+        return Ranking::all();
     }
 
     public function store(Request $request) {
