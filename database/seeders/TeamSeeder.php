@@ -49,6 +49,7 @@ class TeamSeeder extends Seeder
                 'principal' => 'Mike Krack',
                 'logo' => 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Aston_Martin_Formula_One_Team_Logo.svg/1200px-Aston_Martin_Formula_One_Team_Logo.svg.png',
                 'description' => 'Equipo con fuerte inversión reciente y grandes ambiciones.',
+                'competition_id' => 1,
             ],
             [
                 'name' => 'Alpine F1 Team',
