@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('principal');
             $table->string('logo')->nullable();
             $table->text('description')->nullable();
+            $table->foreignId('competition_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
