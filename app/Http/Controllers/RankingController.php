@@ -8,9 +8,7 @@ use Illuminate\Http\Request;
 class RankingController extends Controller
 {
     public function index() {
-        return Ranking::with(['driver', 'race'])
-                 ->get()
-                 ->groupBy('race_id');
+        return Ranking::all()->groupBy('race_id');
     }
 
     public function store(Request $request) {
