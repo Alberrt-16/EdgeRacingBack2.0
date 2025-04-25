@@ -16,12 +16,12 @@ class RankingSeeder extends Seeder
         $drivers = Driver::all();
 
         foreach ($races as $race) {
+            $drivers = Driver::where('competition_id', $race->competition_id);
             $participants = $drivers;
 
             foreach ($participants as $position => $driver) {
                 $didNotFinish = fake()->boolean(10); // 10% chance de DNF
                 $isFastLap = fake()->boolean(5);     // 5% chance vuelta rápida
-                $driver = Driver::where('competition_id', $race->competition_id);
 
                 Ranking::create([
                     'race_id' => $race->id,
