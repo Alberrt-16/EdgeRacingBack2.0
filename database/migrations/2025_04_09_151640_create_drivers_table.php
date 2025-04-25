@@ -22,6 +22,8 @@ return new class extends Migration
             $table->boolean('active')->default(true);
             $table->unsignedBigInteger('team_id');
             $table->foreign('team_id')->references('id')->on('teams')->onDelete('cascade');
+            $table->unsignedBigInteger('competition_id');
+            $table->foreign('competition_id')->references('id')->on('competitions')->onDelete('cascade');
             $table->timestamps();
         });
     }

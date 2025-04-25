@@ -22,6 +22,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyNC9kcml2ZXJzL2hlYWRzaG90cy9mMS92ZXIucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=',
                 'active' => true,
                 'team_id' => 1,
+                'competition_id' => 1,
             ],
             [
                 'first_name' => 'Liam',
@@ -32,6 +33,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyMy9kcml2ZXJzL2hlYWRzaG90cy9mMS9sYXcucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=',
                 'active' => true,
                 'team_id' => 1,
+                'competition_id' => 1,
             ],
             // Mercedes
             [
@@ -43,6 +45,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://e2.365dm.com/f1/drivers/256x256/h_full_1496.png',
                 'active' => true,
                 'team_id' => 2,
+                'competition_id' => 1,
             ],
             [
                 'first_name' => 'Andrea Kimi',
@@ -53,6 +56,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://images.ctfassets.net/1fvlg6xqnm65/5YiTw6xQHuM94ty9yLDnyk/ff67d40c690940307f48d1b370352577/Kimi_Antonelli.png?w=3840&q=75&fm=webp',
                 'active' => true,
                 'team_id' => 2,
+                'competition_id' => 1,
             ],
             // Ferrari
             [
@@ -64,6 +68,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyNC9kcml2ZXJzL2hlYWRzaG90cy9mMS9sZWMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=',
                 'active' => true,
                 'team_id' => 3,
+                'competition_id' => 1,
             ],
             [
                 'first_name' => 'Lewis',
@@ -74,6 +79,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://sportrenders.com/wp-content/uploads/2024/02/Hamilton-PNG-Ferrari-Render-F1-Sport-Renders.png',
                 'active' => true,
                 'team_id' => 3,
+                'competition_id' => 1,
             ],
             // McLaren
             [
@@ -85,6 +91,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyMi9kcml2ZXJzL2hlYWRzaG90cy9mMS9ub3IucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=',
                 'active' => true,
                 'team_id' => 4,
+                'competition_id' => 1,
             ],
             [
                 'first_name' => 'Oscar',
@@ -95,6 +102,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyMy9kcml2ZXJzL2hlYWRzaG90cy9mMS9waWEucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=',
                 'active' => true,
                 'team_id' => 4,
+                'competition_id' => 1,
             ],
             // Aston Martin
             [
@@ -106,6 +114,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyNC9kcml2ZXJzL2hlYWRzaG90cy9mMS9hbG8ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=',
                 'active' => true,
                 'team_id' => 5,
+                'competition_id' => 1,
             ],
             [
                 'first_name' => 'Lance',
@@ -116,6 +125,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyNC9kcml2ZXJzL2hlYWRzaG90cy9mMS9zdHIucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=',
                 'active' => true,
                 'team_id' => 5,
+                'competition_id' => 1,
             ],
             // Alpine
             [
@@ -127,6 +137,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyNC9kcml2ZXJzL2hlYWRzaG90cy9mMS9nYXMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=',
                 'active' => true,
                 'team_id' => 6,
+                'competition_id' => 1,
             ],
             [
                 'first_name' => 'Jack',
@@ -137,6 +148,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyNC9kcml2ZXJzL2hlYWRzaG90cy9mMS1hZmZpbGlhdGVzL2Rvby5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjUwMH19fQ==',
                 'active' => true,
                 'team_id' => 6,
+                'competition_id' => 1,
             ],
             // Williams
             [
@@ -148,6 +160,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyNC9kcml2ZXJzL2hlYWRzaG90cy9mMS9hbGIucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=',
                 'active' => true,
                 'team_id' => 7,
+                'competition_id' => 1,
             ],
             [
                 'first_name' => 'Logan',
@@ -158,6 +171,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyMy9kcml2ZXJzL2hlYWRzaG90cy9mMS9zYXIucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=',
                 'active' => true,
                 'team_id' => 7,
+                'competition_id' => 1,
             ],
             // Stake F1 (Sauber)
             [
@@ -169,6 +183,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyNC9kcml2ZXJzL2hlYWRzaG90cy9mMS9ib3QucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=',
                 'active' => true,
                 'team_id' => 8,
+                'competition_id' => 1,
             ],
             [
                 'first_name' => 'Zhou',
@@ -179,6 +194,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyNC9kcml2ZXJzL2hlYWRzaG90cy9mMS96aG8ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=',
                 'active' => true,
                 'team_id' => 8,
+                'competition_id' => 1,
             ],
             // Visa Cash App RB (ex-AlphaTauri)
             [
@@ -190,6 +206,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyMi9kcml2ZXJzL2hlYWRzaG90cy9mMS90c3UucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=',
                 'active' => true,
                 'team_id' => 9,
+                'competition_id' => 1,
             ],
             [
                 'first_name' => 'Daniel',
@@ -200,6 +217,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyNC9kcml2ZXJzL2hlYWRzaG90cy9mMS9yaWMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=',
                 'active' => true,
                 'team_id' => 9,
+                'competition_id' => 1,
             ],
             // Haas
             [
@@ -211,6 +229,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyMy9kcml2ZXJzL2hlYWRzaG90cy9mMS9tYWcucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=',
                 'active' => true,
                 'team_id' => 10,
+                'competition_id' => 1,
             ],
             [
                 'first_name' => 'Nico',
@@ -221,6 +240,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyMy9kcml2ZXJzL2hlYWRzaG90cy9mMS9odWwucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=',
                 'active' => true,
                 'team_id' => 10,
+                'competition_id' => 1,
             ],
             [
                 'first_name' => 'Francesco',
@@ -231,6 +251,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/10/2ea90c6c-7b86-4430-bf20-9fb8761ef999/J7PRxOT5.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 11,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Marc',
@@ -241,6 +262,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/10/db39c323-167c-4a23-b3ae-75cfe6b06d95/jws78ATZ.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 11,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Jorge',
@@ -251,6 +273,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/04/11/ab7fadd1-d2fa-41f7-a19d-833b0561f673/oE9Aa2VY.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 12,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Marco',
@@ -261,6 +284,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/10/dbd5a0b9-f6c5-4fc8-86b5-546b05232429/5HcsbrNn.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 12,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Fabio',
@@ -271,6 +295,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/10/6d108ca2-e4fc-4030-ab8d-69c481fcd666/DHp0R5id.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 13,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Álex',
@@ -281,6 +306,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/10/5e238bf1-7951-4547-97c3-ec62c7af0c92/CxMFdBMs.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 13,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Brad',
@@ -291,6 +317,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/10/a2af759a-5879-47f1-b94c-2b9c48d01852/mjAvgii1.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 14,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Pedro',
@@ -301,6 +328,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/10/31931e59-0557-4f74-8fac-326c50dd9d60/I7CE3pUc.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 14,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Maverick',
@@ -311,6 +339,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/10/af0af1d5-a53c-47ee-988d-8ad6c37fe189/6PCFCrQu.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 15,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Enea',
@@ -321,6 +350,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/10/cc91f6f5-00b2-468d-8bf0-587cb6e586ff/IYo43ylh.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 15,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Jack',
@@ -331,6 +361,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/10/c1787ba0-46dd-4421-acc2-5b752cba4dd8/SNqHTjGK.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 16,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Miguel',
@@ -341,6 +372,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/04/10/45a86bfe-62cb-4332-9196-9db53d8147f6/3QFNaOUw.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 16,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Álex',
@@ -351,6 +383,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/28/6fff38e2-bd16-4cb0-ac20-3be9ee29ccd3/uzz61wfi.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 17,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Fermín',
@@ -361,6 +394,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/28/b9c97a6e-a729-44dc-bcc2-bfa861b092a8/zMpK9tLN.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 17,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Fabio',
@@ -371,6 +405,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/10/6ae96a17-d675-4dd9-b817-391bc4cd4555/CUaUtv2l.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 18,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Franco',
@@ -381,6 +416,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/10/a68a0e53-80b3-44b3-a5fe-ed245f817df4/Mxvp8G7i.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 18,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Raúl',
@@ -391,6 +427,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/10/1bcfb911-d846-4e2b-b759-f67046d2a722/tczdcKow.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 19,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Ai',
@@ -401,6 +438,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/03/14/8878f076-540a-4861-bde9-a748f72d9628/qBvY03bN.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 19,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Johann',
@@ -411,6 +449,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/10/4166e780-86ca-49d8-a42b-4627d26b1f48/I8FgpnEk.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 20,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Somkiat',
@@ -421,6 +460,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/04/15/74366398-8165-4c76-9c5b-4704f939e11a/iJBqseXD.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 20,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Luca',
@@ -431,6 +471,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/10/5ab75f09-d4bc-4f71-baf1-02007e3b5793/iDs8u21V.png?height=700&width=800',
                 'active' => true,
                 'team_id' => 21,
+                'competition_id' => 2,
             ],
             [
                 'first_name' => 'Joan',
@@ -441,6 +482,7 @@ class DriverSeeder extends Seeder
                 'profile_image' => 'https://resources.motogp.pulselive.com/photo-resources/2025/02/10/0475f8ae-5a34-4505-a49f-70fe912534ed/x5A64JfJ.png?height=700&width=800',    
                 'active' => true,
                 'team_id' => 21,
+                'competition_id' => 2,
             ],    
         ];
 
