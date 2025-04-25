@@ -13,10 +13,10 @@ class RankingSeeder extends Seeder
     public function run(): void
     {
         $races = Race::with('competition')->get(); // Aseguramos que traiga también la competición
-        $drivers = Driver::all();
+        $drivers = Driver::where('competition_id', $races->first()->competition_id);
 
         foreach ($races as $race) {
-            $participants = $drivers->random(rand(10, 15))->values(); // Participan entre 10 y 15 pilotos
+            $participants = $drivers; // Participan entre 10 y 15 pilotos
 
             foreach ($participants as $position => $driver) {
                 $didNotFinish = fake()->boolean(10); // 10% chance de DNF
