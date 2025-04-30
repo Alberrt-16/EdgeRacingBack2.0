@@ -20,10 +20,8 @@ return new class extends Migration
             $table->integer('vehicle_number')->nullable();
             $table->string('profile_image')->nullable();
             $table->boolean('active')->default(true);
-            $table->unsignedBigInteger('driver');
-            $table->foreign('team_id')->references('id')->on('teams')->onDelete('cascade');
-            $table->unsignedBigInteger('competition_id');
-            $table->foreign('competition_id')->references('id')->on('competitions')->onDelete('cascade');
+            $table->foreignId('team_id')->constrained()->onDelete('cascade');
+            $table->foreignId('competition_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
