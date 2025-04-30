@@ -16,6 +16,7 @@ class Driver extends Model
         'profile_image',
         'active',
         'team_id',
+        'competition_id'
     ];
 
 
