@@ -15,6 +15,7 @@ class Team extends Model
         'principal',
         'logo',
         'description',
+        'competition_id'
     ];
 
     public function drivers()
