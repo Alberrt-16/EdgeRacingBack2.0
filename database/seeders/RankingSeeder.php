@@ -11,7 +11,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 class RankingSeeder extends Seeder
 {
     public function run(): void
-{
+{ /*
     $races = Race::with('competition')->get();
 
     foreach ($races as $race) {
@@ -32,6 +32,6 @@ class RankingSeeder extends Seeder
                 'notes' => $didNotFinish ? 'Abandono por problemas técnicos' : null,
             ]);
         }
-    }
+    } */
 }
 }

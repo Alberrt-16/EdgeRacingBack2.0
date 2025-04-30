@@ -17,7 +17,7 @@ class RaceSeeder extends Seeder
         $tracks = Track::all();
 
         $races = [
-            [
+            /* [
                 'name' => 'Australian Grand Prix',
                 'date' => '2025-03-16',
                 'start_time' => '06:00:00',
@@ -376,7 +376,7 @@ class RaceSeeder extends Seeder
                 'description' => 'Gran final de temporada en el circuito Ricardo Tormo.',
                 'competition_id' => 2,
                 'track_id' => 36,
-            ],
+            ], */
                 
         ];
 

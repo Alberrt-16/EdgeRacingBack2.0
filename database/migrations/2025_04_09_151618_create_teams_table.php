@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('country');
             $table->string('principal');
             $table->string('logo')->nullable();
+            $table->string('color', 7)->nullable();
             $table->text('description')->nullable();
             $table->foreignId('competition_id')->constrained()->onDelete('cascade');
             $table->timestamps();

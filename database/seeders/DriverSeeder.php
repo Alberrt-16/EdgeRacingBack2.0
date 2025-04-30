@@ -13,7 +13,7 @@ class DriverSeeder extends Seeder
         $drivers = [
             // F1
             // Red Bull Racing
-            [
+            /*  [
                 'first_name' => 'Max',
                 'last_name' => 'Verstappen',
                 'birth_date' => '1997-09-30',
@@ -483,7 +483,7 @@ class DriverSeeder extends Seeder
                 'active' => true,
                 'team_id' => 21,
                 'competition_id' => 2,
-            ],    
+            ], */   
         ];
 
         foreach ($drivers as $driver) {
