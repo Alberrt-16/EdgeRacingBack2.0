@@ -17,6 +17,7 @@ class Race extends Model
         'description',
         'competition_id',
         'track_id',
+        'race_id',
     ];
 
     public function competition()
