@@ -8,7 +8,7 @@ class Ranking extends Model
 {
     protected $fillable = [
         'race_id',
-        'team_id',
+        'driver_id',
         'competition_id',
         'position',
         'points',
