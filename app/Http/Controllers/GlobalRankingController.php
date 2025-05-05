@@ -13,7 +13,7 @@ class GlobalRankingController extends Controller
     {
         $ranking = Driver::with(['rankings', 'team'])->get()->map(function ($driver) {
             return [
-                'driver' => $driver->first_name,
+                'driver' => $driver->first_name . ' ' . $driver->last_name,
                 'team' => $driver->team->name ?? 'Sin equipo',
                 'points' => $driver->rankings->sum('points'),
             ];
