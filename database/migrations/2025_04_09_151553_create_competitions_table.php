@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('description');
             $table->string(column: 'image');
-            $table->enum('status', ['upcoming', 'ongoing', 'finished'])->default('upcoming');
+            $table->enum('status', ['upcoming', 'ongoing', 'finished'])->default('upcoming'); // upcoming, ongoing, finished
             $table->timestamps();
         });
     }
