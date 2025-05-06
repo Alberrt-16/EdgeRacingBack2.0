@@ -9,7 +9,7 @@
 <body class="m-0 p-0 overflow-hidden relative h-screen w-screen">
 
   <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover z-0">
-    <source src="/storage/uploads/vid/Diseño sin título.mp4" type="video/mp4" />
+    <source src="https://youtu.be/8MjCSJ42e9c" type="video/mp4" />
     Tu navegador no soporta videos en HTML5.
   </video>
 
