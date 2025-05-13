@@ -19,11 +19,15 @@ class Team extends Model
     ];
 
     public function drivers()
-    {
-        return $this->belongsToMany(Driver::class);
-    }
+{
+    return $this->hasMany(Driver::class);
+}
     public function competitions()
     {
         return $this->belongsToMany(Competition::class);
+    }
+    public function rankings()
+    {
+        return $this->hasMany(Ranking::class);
     }
 }

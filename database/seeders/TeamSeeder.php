@@ -11,7 +11,7 @@ class TeamSeeder extends Seeder
     public function run(): void
     {
         $teams = [
-            /* [
+             [
                 'name' => 'Red Bull Racing',
                 'country' => 'Austria',
                 'principal' => 'Christian Horner',
@@ -20,7 +20,7 @@ class TeamSeeder extends Seeder
                 'description' => 'Equipo campeón con gran enfoque en el desarrollo aerodinámico.',
                 'competition_id' => 1,
             ],
-            [
+            /*[
                 'name' => 'Mercedes-AMG Petronas F1 Team',
                 'country' => 'Germany',
                 'principal' => 'Toto Wolff',

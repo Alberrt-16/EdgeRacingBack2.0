@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('driver_ranking', function (Blueprint $table) {
+        Schema::create('driver_rankings', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('driver_id');
             $table->unsignedBigInteger('ranking_id');
@@ -19,6 +19,7 @@ return new class extends Migration
             $table->foreign('driver_id')->references('id')->on('drivers')->onDelete('cascade');
             $table->foreign('ranking_id')->references('id')->on('rankings')->onDelete('cascade');
             $table->foreign('race_id')->references('id')->on('races')->onDelete('cascade');
+            $table->integer('total_points')->default(0);
             $table->unique(['driver_id', 'ranking_id', 'race_id']);
             $table->timestamps();
         });

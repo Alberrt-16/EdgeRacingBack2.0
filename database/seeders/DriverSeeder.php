@@ -13,7 +13,7 @@ class DriverSeeder extends Seeder
         $drivers = [
             // F1
             // Red Bull Racing
-            /*  [
+              [
                 'first_name' => 'Max',
                 'last_name' => 'Verstappen',
                 'birth_date' => '1997-09-30',
@@ -35,6 +35,7 @@ class DriverSeeder extends Seeder
                 'team_id' => 1,
                 'competition_id' => 1,
             ],
+            /*
             // Mercedes
             [
                 'first_name' => 'George',

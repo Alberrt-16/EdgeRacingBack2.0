@@ -12,7 +12,7 @@ class TrackSeeder extends Seeder
     public function run(): void
     {
             $tracks = [
-                /* [
+                 [
                     'name' => 'Albert Park Circuit',
                     'country' => 'Australia',
                     'location' => 'Melbourne',
@@ -20,7 +20,7 @@ class TrackSeeder extends Seeder
                     'turns' => 14,
                     'image' => 'https://upload.wikimedia.org/wikipedia/commons/2/27/Melbourne_GP_Circuit.png',
                 ],
-                [
+                /*[
                     'name' => 'Shanghai International Circuit',
                     'country' => 'China',
                     'location' => 'Shanghai',

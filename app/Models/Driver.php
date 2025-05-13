@@ -27,9 +27,7 @@ class Driver extends Model
 
     public function rankings()
     {
-        return $this->belongsToMany(Ranking::class)
-            ->withPivot('race_id')
-            ->withTimestamps();
+        return $this->hasMany(Ranking::class);
     }
 
 }
