@@ -15,6 +15,7 @@ class Driver extends Model
         'vehicle_number',
         'profile_image',
         'active',
+        'points',
         'team_id',
         'competition_id'
     ];
@@ -25,9 +26,5 @@ class Driver extends Model
         return $this->belongsTo(Team::class);
     }
 
-    public function rankings()
-    {
-        return $this->hasMany(Ranking::class);
-    }
 
 }

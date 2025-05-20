@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer('vehicle_number')->nullable();
             $table->string('profile_image')->nullable();
             $table->boolean('active')->default(true);
+            $table->integer('points');
             $table->foreignId('team_id')->constrained()->onDelete('cascade');
             $table->foreignId('competition_id')->constrained()->onDelete('cascade');
             $table->timestamps();

@@ -46,6 +46,7 @@ Route::match(['get', 'post'], '/team/new', [TeamController::class, 'store'])->na
 Route::match(['get', 'post'], '/team/edit/{id}', [TeamController::class, 'update'])->name('team_edit');
 Route::get('/team/delete/{id}', [TeamController::class, 'delete'])->name('team_delete');
 Route::get('/team/show/{id}', [TeamController::class, 'show'])->name('team_show');
+Route::get('/teams/drivers', [TeamController::class, 'driversGrouped'])->name('teams.drivers');
 
 //// DRIVERS
 Route::get('/driver/list', [DriverController::class, 'index'])->name('driver_list');
@@ -91,12 +92,50 @@ Route::post('/login', function (Request $request) {
     ]);
 });
 
-Route::middleware('auth:sanctum')->post('/logout', function (Request $request) {
-    $request->user()->currentAccessToken()->delete();
-    return response()->json(['message' => 'Sesión cerrada']);
+Route::post('/register', function (Request $request) {
+    $request->validate([
+        'name' => 'required|string|max:255',
+        'email' => 'required|email|unique:users',
+        'password' => 'required|string|min:6',
+    ]);
+
+    $user = User::create([
+        'name' => $request->name,
+        'email' => $request->email,
+        'password' => Hash::make($request->password),
+        'role' => 'guest',
+    ]);
+
+    return response()->json([
+        'message' => 'Usuario registrado correctamente',
+        'user' => $user,
+    ], 201);
 });
 
+Route::put('/users/{user}/role', function (Request $request, User $user) {
+    $request->validate([
+        'role' => 'required|in:guest,teamManager,admin',
+        'team_id' => 'nullable|exists:teams,id',
+    ]);
 
+    $user->role = $request->role;
+
+    if ($request->role === 'teamManager') {
+        if (!$request->team_id) {
+            return response()->json(['message' => 'Debes proporcionar un team_id para un teamManager'], 422);
+        }
+        $user->team_id = $request->team_id;
+    } else {
+        $user->team_id = null;
+    }
+
+    $user->save();
+
+    return response()->json([
+        'message' => 'Rol y equipo actualizados correctamente',
+        'user' => $user,
+    ]);
+});
 
 Route::get('/saludo', function () {
     return response()->json(['mensaje' => 'niga']);

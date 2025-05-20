@@ -12,13 +12,5 @@ class DriverRanking extends Model
         'total_points',
     ];
 
-    public function driver()
-    {
-        return $this->belongsTo(Driver::class);
-    }
 
-    public function competition()
-    {
-        return $this->belongsTo(Competition::class);
-    }
 }

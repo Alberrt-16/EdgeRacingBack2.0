@@ -13,9 +13,20 @@ class UserController extends Controller
     }
 
     public function store(Request $request)
-    {
-        return User::create($request->all());
-    }
+{
+    $validated = $request->validate([
+        'name' => 'required|string|max:255',
+        'email' => 'required|email|unique:users',
+        'password' => 'required|string|min:6',
+        'role' => 'nullable|string', // o lo que tengas
+    ]);
+
+    $validated['password'] = bcrypt($validated['password']); // Hashear password
+
+    $user = User::create($validated);
+
+    return response()->json($user, 201);
+}
 
     public function show($id)
     {
@@ -23,11 +34,24 @@ class UserController extends Controller
     }
 
     public function update(Request $request, $id)
-    {
-        $user = User::findOrFail($id);
-        $user->update($request->all());
-        return $user;
+{
+    $user = User::findOrFail($id);
+
+    $validated = $request->validate([
+        'name' => 'string|max:255',
+        'email' => 'email|unique:users,email,' . $user->id,
+        'password' => 'string|min:6',
+        'role' => 'string',
+    ]);
+
+    if (isset($validated['password'])) {
+        $validated['password'] = bcrypt($validated['password']);
     }
+
+    $user->update($validated);
+
+    return response()->json($user);
+}
 
     public function delete($id)
     {

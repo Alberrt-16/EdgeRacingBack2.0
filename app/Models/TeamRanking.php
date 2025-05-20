@@ -12,13 +12,4 @@ class TeamRanking extends Model
         'total_points',
     ];
 
-    public function team()
-    {
-        return $this->belongsTo(Team::class);
-    }
-
-    public function competition()
-    {
-        return $this->belongsTo(Competition::class);
-    }
 }

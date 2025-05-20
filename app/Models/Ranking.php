@@ -17,15 +17,5 @@ class Ranking extends Model
         'notes',
     ];
 
-    public function race()
-    {
-        return $this->belongsTo(Race::class);
-    }
 
-    public function drivers()
-    {
-        return $this->belongsToMany(Driver::class)
-            ->withPivot('race_id')
-            ->withTimestamps();
-    }
 }

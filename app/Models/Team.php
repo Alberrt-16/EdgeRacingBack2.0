@@ -14,13 +14,14 @@ class Team extends Model
         'country',
         'principal',
         'logo',
+        'points',
         'description',
         'competition_id'
     ];
 
-    public function drivers()
+    public function drivers()   
 {
-    return $this->hasMany(Driver::class);
+    return $this->belongsToMany(Driver::class);
 }
     public function competitions()
     {
@@ -29,5 +30,10 @@ class Team extends Model
     public function rankings()
     {
         return $this->hasMany(Ranking::class);
+    }
+
+    public function users()
+    {
+        return $this->hasMany(User::class);
     }
 }

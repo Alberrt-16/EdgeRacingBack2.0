@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('logo')->nullable();
             $table->string('color', 7)->nullable();
             $table->text('description')->nullable();
+            $table->integer('points');
             $table->foreignId('competition_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });

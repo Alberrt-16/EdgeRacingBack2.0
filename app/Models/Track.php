@@ -19,8 +19,4 @@ class Track extends Model
         'description',
     ];
 
-    public function races()
-    {
-        return $this->hasMany(Race::class);
-    }
 }

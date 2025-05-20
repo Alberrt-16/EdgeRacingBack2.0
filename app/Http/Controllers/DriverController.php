@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class DriverController extends Controller
 {
     public function index() {
-        return Driver::all();
+        return Driver::orderByDesc('points')->get();
     }
 
     public function store(Request $request) {
